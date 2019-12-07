@@ -13,4 +13,5 @@
 #include <iostream>
 #include "String.h"
 #include "Complex.h"
+#include "string_complex_game.h"
 #endif //PCH_H
