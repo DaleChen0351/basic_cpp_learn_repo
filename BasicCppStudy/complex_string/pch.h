@@ -10,5 +10,7 @@
 #define PCH_H
 
 // TODO: 添加要在此处预编译的标头
-
+#include <iostream>
+#include "String.h"
+#include "Complex.h"
 #endif //PCH_H
