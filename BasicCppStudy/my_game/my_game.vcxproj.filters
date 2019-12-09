@@ -13,23 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\interface">
+      <UniqueIdentifier>{59ee9f02-c7f0-4c92-8e82-8f664facae71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\attack">
+      <UniqueIdentifier>{b32ccaba-08d0-41d5-ae74-702425a47b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\defense">
+      <UniqueIdentifier>{f5f16053-b5c3-4584-b790-6f738bc19bfe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="stl.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="baseAttack.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="baseEquip.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="baseHuman.h">
+      <Filter>头文件\interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stl_study.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="stl_test.cpp">
+    <ClCompile Include="my_game.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -9,9 +9,14 @@
 #ifndef PCH_H
 #define PCH_H
 
-#include <vector>
-#include <list>
-#include <array>
-#include  "stl.h"
+// TODO: 添加要在此处预编译的标头
+#include <string>
+#include <iostream>
+// # define unsigned int uint
+#include "baseEquip.h"
+#include "baseAttack.h"
+#include "baseHuman.h"
+
+
 
 #endif //PCH_H

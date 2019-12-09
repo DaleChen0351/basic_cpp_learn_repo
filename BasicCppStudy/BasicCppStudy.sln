@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stl_study", "stl_study\stl_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "complex_string", "complex_string\complex_string.vcxproj", "{A9F89DA9-439F-41FA-8D1B-F61B1CFD6B99}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "my_game", "my_game\my_game.vcxproj", "{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{A9F89DA9-439F-41FA-8D1B-F61B1CFD6B99}.Release|x64.Build.0 = Release|x64
 		{A9F89DA9-439F-41FA-8D1B-F61B1CFD6B99}.Release|x86.ActiveCfg = Release|Win32
 		{A9F89DA9-439F-41FA-8D1B-F61B1CFD6B99}.Release|x86.Build.0 = Release|Win32
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Debug|x64.ActiveCfg = Debug|x64
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Debug|x64.Build.0 = Debug|x64
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Debug|x86.Build.0 = Debug|Win32
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Release|x64.ActiveCfg = Release|x64
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Release|x64.Build.0 = Release|x64
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Release|x86.ActiveCfg = Release|Win32
+		{C834EFD7-ECDB-47F1-ABA5-ADC95F6D895D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
