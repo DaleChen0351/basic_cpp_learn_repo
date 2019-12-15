@@ -11,7 +11,16 @@
 
 #include <vector>
 #include <list>
+#include <deque>
+
 #include <array>
+#include <queue>
+#include <iostream>
 #include  "stl.h"
+#include "list_test.h"
+#include "vector_test.h"
+#include "deque_test.h"
+
+
 
 #endif //PCH_H

@@ -21,15 +21,24 @@
     <ClInclude Include="stl.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="vector_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="list_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="deque_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stl_study.cpp">
+    <ClCompile Include="stl_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stl_test.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
