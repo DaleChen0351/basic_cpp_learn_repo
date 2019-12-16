@@ -19,7 +19,6 @@
 #include  "stl.h"
 #include "list_test.h"
 #include "vector_test.h"
-#include "deque_test.h"
 
 
 

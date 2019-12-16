@@ -72,7 +72,7 @@ void test_vector()
 	if (b.empty()) // 注意：和array不一样，array在定义的时候已经确定好了大小，一般不会改变。而vector不一定（比如assign函数，可以动态改变的）
 	{
 		b.front();
-		b.back();
+		b.back();// 注意 取vector的back和front的时候，一定要先判断是否为空
 	}
 	// array 和 vector的迭代器是一样的
 	// ...

@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include <iostream>
+#include <fstream>
 
 void test_All_common()
 {
@@ -43,7 +44,11 @@ int main()
 	//	std::cout << std::endl;
 	//}
 
-	algorithm_list();
+	//algorithm_list();
+
+	std::ofstream outfile("test.txt", std::ios::app);
+	outfile << "hello " << std::endl;
+	outfile.close();
 }
 
 

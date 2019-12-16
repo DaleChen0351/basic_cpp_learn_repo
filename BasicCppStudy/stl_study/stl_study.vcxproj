@@ -151,7 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="deque_test.h" />
     <ClInclude Include="list_test.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="stl.h" />

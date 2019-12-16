@@ -3,18 +3,19 @@
 
 #include "pch.h"
 #include <iostream>
+#include <fstream>
 
 
-void test_for_String(void)
-{
-	String  s1("hi");// 构造函数
-	String s2("hello"); 
-
-	String s3(s1); // copy ctor
-	std::cout << s3 << std::endl; // 运算符重载
-	s3 = s2; // copy op
-	std::cout << s3 << std::endl;
-}
+//void test_for_String(void)
+//{
+//	String  s1("hi");// 构造函数
+//	String s2("hello"); 
+//
+//	String s3(s1); // copy ctor
+//	std::cout << s3 << std::endl; // 运算符重载
+//	s3 = s2; // copy op
+//	std::cout << s3 << std::endl;
+//}
 
 void test_for_Complex(void)
 {
@@ -47,7 +48,9 @@ void test_for_human(void)
 int main()
 {
     std::cout << "Hello World!\n"; 
-	test_for_String();
+	std::ofstream outfile("test.txt", std::ios::app);
+	outfile << "hello " << std::endl;
+	outfile.close();
 }
 
 
