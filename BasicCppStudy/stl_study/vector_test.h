@@ -112,3 +112,9 @@ void test_vector()
 	// ?
 	// std::vector<bool> never use it
 }
+//
+class test
+{
+public:
+	std::vector<int> e_out_vec = std::vector<int>(3); // 类中初始化vector的个数的话
+};

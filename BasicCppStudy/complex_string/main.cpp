@@ -42,6 +42,24 @@ void test_for_human(void)
 	std::cout << (h2 + 5) << std::endl;
 }
 
+class A
+{
+public:
+	A(int i) : m_i(i){}
+private:
+	int m_i;
+};
+
+class B
+{
+public:
+	B(): a(1){}
+private:
+	A a;
+
+};
+// good it is right 
+
 
 
 
