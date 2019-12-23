@@ -26,5 +26,8 @@
     <ClCompile Include="houjie_stl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test_sil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
