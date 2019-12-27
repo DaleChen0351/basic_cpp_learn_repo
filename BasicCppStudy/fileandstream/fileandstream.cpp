@@ -4,7 +4,9 @@
 #include "pch.h"
 #include <iostream>
 #include <fstream> // 里面包含了 ofstream
-
+#include <sstream>
+#include <vector>
+// https://www.cnblogs.com/Lin-Yi/p/11071822.html
 class student
 {
 public:
@@ -12,6 +14,7 @@ public:
 	int Score;
 };
 void test_for_student();
+void test_for_ifstream();
 
 int main()
 {
@@ -36,7 +39,7 @@ int main()
 		out2 << "append sth more!" << std::endl;
 	}
 	out2.close();
-	test_for_student();
+	test_for_ifstream();
 //	// 写指针
 //	std::ofstream fpoint("pointgoogd.txt", std::ios::out | std::ios::binary);
 //	fpoint << "tellpoint";
@@ -66,3 +69,64 @@ void test_for_student()
 	outfile.close();
 
 }
+class config
+{
+public:
+	std::string Name;
+	std::string type;
+	int value;
+};
+
+
+
+void test_for_ifstream()
+{
+	std::ifstream inf;
+	char buff[100];
+	inf.open("config.txt", std::ios::in);
+	if (!inf.is_open())
+	{
+		std::cout << "error with open" << std::endl;
+	}
+	else
+	{
+		std::vector<std::vector<config>> vec_2d;
+		while (inf.getline(buff, sizeof(buff)))
+		{
+			std::string s;
+			std::vector<config> vec;
+			s = buff;
+			std::cout << s.c_str()<< std::endl;
+
+			std::stringstream linestream(s);
+			std::string sub;
+			linestream >> sub;
+			config mfig;
+			mfig.Name = sub;
+			while (linestream >> sub)
+			{
+				std::string type;
+				std::string value;
+				int value_i = 0;
+				int nPos = sub.find(":");
+				if (nPos !=-1)
+				{
+					type = sub.substr(0, nPos);
+					value = sub.substr(nPos+1);
+					value_i = std::stoi(value);
+				}
+				mfig.type = type;
+				mfig.value = value_i;
+				vec.push_back(mfig);
+			}
+			vec_2d.push_back(vec);
+			std::cout<<std::endl;
+		}
+		int i = 0;
+	}
+
+}
+//for (int idx = 0; idx < vec.size(); idx++)
+//{
+//	std::cout << vec[idx].c_str() << std::endl;
+//}

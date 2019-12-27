@@ -1,0 +1,4 @@
+FrontRadar  dx:10 vx:20 dx:50 vx:30 
+CLRadar dx:20 vx:30 dx:50 vx:30 
+CRRadar dx:10 vx:30 dx:40 vx:30 
+RearRadar dx:20 vx:30 dx:50 vx:31
