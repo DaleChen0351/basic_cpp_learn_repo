@@ -56,6 +56,7 @@ inline void algorithm_list()
 		if ((*iter).dx < 50)
 		{
 			(*iter).isVaild = true;
+			iter->dx = 20;
 		}
 		++iter;
 	}

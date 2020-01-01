@@ -46,9 +46,7 @@ int main()
 
 	//algorithm_list();
 
-	std::ofstream outfile("test.txt", std::ios::app);
-	outfile << "hello " << std::endl;
-	outfile.close();
+	
 }
 
 
