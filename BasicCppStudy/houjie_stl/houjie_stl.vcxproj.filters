@@ -21,6 +21,9 @@
     <ClInclude Include="test_sil.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="standard_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

@@ -17,7 +17,7 @@ inline void test_list()
 	auto iter = mlist.begin();
 	for (size_t i = 0; i < 5; ++i)
 	{
-		(*++iter);
+		(*++iter);// ++ 运算符重载，指向下一个node，* 也是运算符重载，返回，迭代器中包含的node，node中包含的data的值
 	}
 	// 方式二
 	std::advance(iter, 4);// 得到了这个位置的迭代器
