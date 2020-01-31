@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{AA93A321-AD29-47F4-A2FD-FE17F6AE1D79}</ProjectGuid>
+    <ProjectGuid>{F586F9F2-5340-4F2D-B62F-F52711082E7C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>houjiestl</RootNamespace>
+    <RootNamespace>vectorchuanzhiblog</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -152,25 +152,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="standard_list.h" />
-    <ClInclude Include="test_sil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basicknow.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="stl_deque.cpp" />
-    <ClCompile Include="stl_list.cpp" />
-    <ClCompile Include="stl_vector.cpp" />
-    <ClCompile Include="test_array.cpp" />
-    <ClCompile Include="test_common.cpp" />
-    <ClCompile Include="test_list.cpp" />
-    <ClCompile Include="test_vector.cpp" />
+    <ClCompile Include="vector_chuanzhiblog.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

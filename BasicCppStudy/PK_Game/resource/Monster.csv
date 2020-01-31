@@ -1,0 +1,6 @@
+monsterId,monsterName,monsterHp,monsterAtk,monsterDef,monsterInfo
+1,史莱姆,5,10,50,怪物
+2,史迪仔,10,5,80,小可爱
+3,石巨人,20,10,200,老可爱
+4,地狱魔王,50,20,300,防御高
+5,黑龙,100,15,500,防御高
