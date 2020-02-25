@@ -18,42 +18,12 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="test_sil.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="standard_list.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test_vector.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test_array.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test_list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="test_common.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="basicknow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="stl_list.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="stl_vector.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="stl_deque.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
