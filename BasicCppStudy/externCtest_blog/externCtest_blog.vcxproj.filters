@@ -18,45 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="FileManager.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="knife.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="broadsword.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="dragonsword.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="hero.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="monster.cpp">
+    <ClCompile Include="show.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileManager.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="weapon.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="knife.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="broadsword.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="dragonsword.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="hero.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="monster.h">
+    <ClInclude Include="show.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

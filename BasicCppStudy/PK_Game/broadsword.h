@@ -2,11 +2,10 @@
 #include "weapon.h"
 
 
-class Knife : public Weapon
+class BroadSword : public Weapon
 {
 public:
-	Knife();
-
+	BroadSword();
 	// 获取基础伤害值
 	virtual int getBaseDamage();
 	// 暴击， 返回值大于0 触发暴击
@@ -17,4 +16,5 @@ public:
 	virtual bool getFrozen();
 	// 触发概率计算
 	virtual bool isTrigger(int rate);
+
 };
