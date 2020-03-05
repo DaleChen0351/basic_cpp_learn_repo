@@ -17,5 +17,6 @@ int main()
 		}
 		cl->addToHead(name);
 	}
+	cl->printList();
 	
 }

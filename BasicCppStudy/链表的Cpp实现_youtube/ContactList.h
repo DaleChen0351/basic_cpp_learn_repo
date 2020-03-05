@@ -4,10 +4,10 @@
 
 class ContactList
 {
-	friend ContactNode;
 public:
 	ContactList();
 	void addToHead(const std::string&);
+	void printList();
 private:
 	ContactNode* head;
 	int size;

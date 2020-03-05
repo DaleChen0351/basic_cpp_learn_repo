@@ -20,3 +20,12 @@ void ContactList::addToHead(const string& name)
 	}
 	size++;
 }
+void ContactList::printList()
+{
+	ContactNode* tp = this->head;
+	while (tp != NULL)
+	{
+		cout << *tp << endl;
+		tp = tp->next;
+	}
+}
