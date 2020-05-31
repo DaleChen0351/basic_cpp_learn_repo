@@ -1,12 +1,12 @@
-#include "knife.h"
+#include "broadsword.h"
 
-Knife::Knife()
+BroadSword::BroadSword()
 {
 	FileManager fm;
 	map<string, map<string, string>>m_weapon;
 	fm.loadCSVData("resource/Weapon.csv", m_weapon);
 
-	string ID = m_weapon["1"]["weaponId"];
+	string ID = m_weapon["2"]["weaponId"];
 	this->weaponName = m_weapon[ID]["weaponName"];
 	this->baseDamage = atoi(m_weapon[ID]["weaponAtk"].c_str());
 	this->critPlus = atoi(m_weapon[ID]["weaponCritPlus"].c_str());
@@ -16,12 +16,12 @@ Knife::Knife()
 	this->frozenRate = atoi(m_weapon[ID]["weaponFrozenRate"].c_str());
 }
 
-int Knife::getBaseDamage()
+int BroadSword::getBaseDamage()
 {
 	return this->baseDamage;
 }
 
-int Knife::getCrit()
+int BroadSword::getCrit()
 {
 	if (isTrigger(this->critRate))
 	{
@@ -30,7 +30,7 @@ int Knife::getCrit()
 	return 0;
 }
 
-int Knife::getSuckBlood()
+int BroadSword::getSuckBlood()
 {
 	if (isTrigger(this->suckRate))
 	{
@@ -39,12 +39,12 @@ int Knife::getSuckBlood()
 	return 0;
 }
 
-bool Knife::getFrozen()
+bool BroadSword::getFrozen()
 {
 	return isTrigger(this->frozenRate);
 }
 
-bool Knife::isTrigger(int rate)
+bool BroadSword::isTrigger(int rate)
 {
 	//
 	int randVal = rand() & 100 + 1;// 1~100

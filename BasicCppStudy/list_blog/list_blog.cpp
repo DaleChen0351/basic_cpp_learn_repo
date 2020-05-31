@@ -40,7 +40,7 @@ public:
 	int m_ID;
 	int m_Age;
 	int m_Weight;
-	bool operator ==(const Girl& g)
+	bool operator ==(const Girl& g)// remove 函数要用到，==的比较
 	{
 		if (this->m_Age == g.m_Age)
 		{
@@ -112,7 +112,7 @@ public:
 class Removecond
 {
 public:
-	bool operator()(int i)
+	bool operator()(int i)//应用传递？可以么？
 	{
 		return i == 21;
 	}
@@ -144,12 +144,20 @@ void test_03()
 
 }
 
+// 这是为什么呢？
+
+/*for (std::list<ExistArray>::iterator it = id_list.begin(); it != id_list.end(); it++)
+    {
+        (*it).isExist == FALSE; 没有反应
+    }*/
+
+
 int main()
 {
     std::cout << "Hello World!\n"; 
 	//test_01();
-	//test_02();
-	test_03();
+	test_02();
+	//test_03();
 	
 
 	
