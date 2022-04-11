@@ -15,8 +15,8 @@ int main()
 		{
 			break;
 		}
-		cl->addToHead(name);
+		cl->insetToList(name);
 	}
-	cl->printList();
+	cl->printList ();
 	
 }

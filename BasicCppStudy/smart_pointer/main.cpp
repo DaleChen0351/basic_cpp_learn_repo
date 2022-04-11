@@ -6,6 +6,69 @@
 
 #include "pch.h"
 using namespace myPoint;
+#include <memory>
+
+// smart points test
+class Entity {
+public:
+    Entity() { 
+        puts("Entity created"); 
+        id_m = 0;
+    }
+    ~Entity() { puts("Entity destroyed"); }
+    int id_m;
+
+};
+
+
+void ex1()
+{
+    puts("--------------");
+    puts("Entering ex1");
+
+    {
+        puts("Entering ex1_scope1");
+        auto e1 = std::make_unique<Entity>();// stack heap?
+
+        puts("Leaving ex1::scope1");// 智能指针在离开作用域后就调用析构函数，然后指向为空
+    }
+
+    puts("leaving ex1");
+}
+void foo(std::unique_ptr<Entity> ae) {
+    puts("Entering foo");
+    ae->id_m = 1;
+    std::cout << "id_m: " << ae->id_m << std::endl;
+    puts("Leaving foo");
+}
+
+void ex2() {
+    puts("-----------");
+    puts("Entering ex2");
+    auto e1 = std::make_unique<Entity>();
+    foo(std::move(e1));
+
+    puts("Leaving ex2");
+}
+
+void ex3()
+{
+    puts("-----------");
+    puts("Entering ex3");
+    auto e1 = std::make_shared<Entity>();
+    std::cout << e1.use_count() << std::endl;//1?
+    {
+        puts("Entering ex3::scope1");
+        auto e2 = e1;//copy 2
+        std::cout << e1.use_count() << std::endl;//2?
+        auto e3 = std::move(e2);
+        std::cout << e1.use_count() << std::endl;//2?
+        puts("Leaving ex3::scope1");
+    }
+    std::cout << e1.use_count() << std::endl;//1
+    puts("Leaving ex3");
+
+}
 
 // 智能指针作为参数的传入
 //void print(ObjectPtr obj)// 作为值传入 拷贝（指针引用计数的改变），零时变量
@@ -42,6 +105,10 @@ void useDeleter()
 int main()
 {
     std::cout << "Hello World!\n"; 
+    //ex1();
+    //ex2();
+    ex3();
+    std::cout << __cplusplus << std::endl;
 	ObjectPtr null;// ?
 	ObjectPtr obj(new Object(1));
 	std::cout << obj.use_count() << std::endl;// 引用计数的原理？

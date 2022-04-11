@@ -17,10 +17,15 @@ enum Section
 void test_01()
 {
 	map<int, string>m;
+	//方式一
 	m.insert(pair<int, string>(1, "Dale"));
+	//方式二
 	m.insert(make_pair(2, "Bob"));
+	//方式三
 	m.insert(map<int, string>::value_type(3, "Susan"));
+	//方式四
 	m[4] = "Linda";
+	//遍历
 	for (map<int, string>::iterator it = m.begin(); it != m.end(); it++)
 	{
 		cout << "ID = " << it->first << "  Name = " << it->second << endl;
